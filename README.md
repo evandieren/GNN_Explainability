@@ -26,7 +26,7 @@ GNN_Explainability/
 
 ### Prerequisites and Installation
 
-The first step to install the necessary packages is to create a new python virtual environement (e.g. using conda or venv) with Python 3.9.7 (version used for the project). The second step is to install PyTorch. This project was based on the version 1.13.1. To install PyTorch 1.13.1 with pip, please run the following command:
+The first step to install the necessary packages is to create a new Python virtual environment (e.g. using conda or venv) with Python 3.9.7 (the version used for the project). The second step is to install PyTorch. This project was based on version 1.13.1. To install PyTorch 1.13.1 with pip, please run the following command:
 
 ```
 pip install torch==1.13.1
@@ -37,7 +37,9 @@ Furthermore, please also install the library [pyg-lib](https://github.com/pyg-te
 ```
 pip install pyg-lib -f https://data.pyg.org/whl/torch-${TORCH}+${CUDA}.html
 ```
-where `${TORCH}` will be 1.13.0, and `${CUDA}` will be your cuda version or gpu (see link for pyg-lib for more information)
+where `${TORCH}` will be 1.13.0, and `${CUDA}` will be your cuda version or GPU (see link for pyg-lib for more information)
+
+*BUILDING REQUIREMENTS IN PROGRESS*
 
 Finally, the requirements to run the experiments are in the `requirement.txt` file. Please install the requirements using the following command from the root of the repository:
 
@@ -46,7 +48,7 @@ pip install -r requirements.txt
 ```
 This will automatically install the required packages to run the experiments. 
 
-Estimated time for installation : `< 1h`
+Estimated time for installation: `< 1h`
 
 
 ## Running the experiments, training, etc.
@@ -60,7 +62,7 @@ python3 main_gnn.py --gnn gcn --log_dir log_dir_ogb/ --checkpoint_dir check_dir_
 ```
 It will train the model and save checkpoints in the `models/pcqm4m-v2_ogb/check_dir_ogb/` folder.
 
-To colmpute explanations for the three methods, one has to run the scripts from the `experiments/Comparison_Explainers/scripts` folder.
+To compute explanations for the three methods, one has to run the scripts from the `experiments/Comparison_Explainers/scripts` folder.
 
 ## Author and supervisors
 
@@ -69,8 +71,8 @@ To colmpute explanations for the three methods, one has to run the scripts from 
 
 ## Acknowledgments
 
-* Charles Dufour for his guidance, continuous help, and making me discover GNNs
-* Andrea Mastropietro - EdgeSHAPer code for classification (original : https://github.com/AndMastro/EdgeSHAPer)
-* Open Graph Benchmark - Graph Neural Network used for the project : https://github.com/snap-stanford/ogb/tree/master/examples/lsc/pcqm4m-v2
+* Charles Dufour for his guidance, continuous help, and for making me discover GNNs
+* Andrea Mastropietro - EdgeSHAPer code for classification (original: https://github.com/AndMastro/EdgeSHAPer)
+* Open Graph Benchmark - Graph Neural Network used for the project: https://github.com/snap-stanford/ogb/tree/master/examples/lsc/pcqm4m-v2
 
 
