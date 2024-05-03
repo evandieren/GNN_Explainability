@@ -7,9 +7,7 @@ __pycache__/
 # Added evandieren
 .DS_Store
 data/*
-experiments/Comparison_Explainers/scripts/EdgeSHAPer/edgeSHAP_script.sh
-experiments/Comparison_Explainers/scripts/gnnexplainer/gnn_script.sh
-experiments/Comparison_Explainers/scripts/regSHAPer/regSHAP_script.sh
+experiments/Comparison_Explainers/scripts/*
 
 # C extensions
 *.so
