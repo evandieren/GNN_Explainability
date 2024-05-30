@@ -39,7 +39,7 @@ pip install pyg-lib -f https://data.pyg.org/whl/torch-${TORCH}+${CUDA}.html
 ```
 where `${TORCH}` will be 1.13.0, and `${CUDA}` will be your cuda version or GPU (see link for pyg-lib for more information)
 
-*BUILDING REQUIREMENTS IN PROGRESS*
+*REQUIREMENTS ARE OUT OF DATE AND INCOMPLETE.*
 
 Finally, the requirements to run the experiments are in the `requirement.txt` file. Please install the requirements using the following command from the root of the repository:
 
